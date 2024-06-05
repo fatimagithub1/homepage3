@@ -15,6 +15,24 @@ namespace homepage3.Controllers
 
         public IActionResult Index()
         {
+            ViewData["Message"] = "Join us our mission to protect our occeans by reducing plastic pollution.<br> And make consumer more \r\n     aware of their role when using plasti!";
+            return View();
+        }
+
+        public IActionResult Index1()
+        {
+            TempData["Message"] = "Join us our mission to protect our occeans by reducing plastic pollution.<br> And make consumer more \r\n     aware of their role when using plasti!";
+            return View();
+        }
+        public IActionResult Index2()
+        {
+            ViewData["Message"] = "Join us our mission to protect our occeans by reducing plastic pollution.<br> And make consumer more \r\n     aware of their role when using plasti!";
+            return View();
+
+            ViewBag.Message = "Join us our mission to protect our occeans by reducing plastic pollution.<br> And make consumer more \\r\\n     aware of their role when using plasti!";
+            return View();
+
+            TempData["Message"] = "Join us our mission to protect our occeans by reducing plastic pollution.<br> And make consumer more \r\n     aware of their role when using plasti!";
             return View();
         }
 
